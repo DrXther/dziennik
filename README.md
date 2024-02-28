@@ -1,5 +1,5 @@
 # Dziennik
 
-Główny branch projektu znajduje się w masterze a nie w main przez mój błąd podczas pusha projektu.
+Projekt na P5_DESK, dziennik elektroniczny/
 
-Wystarczy zainstalować całość, uruchomić przez VS i zadziała.
+By poprawnie zainstalować projekt wystarczy zainstalować całość i uruchomić przez VS.
