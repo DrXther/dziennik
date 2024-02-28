@@ -1,3 +1,5 @@
 # Dziennik
 
-Główny branch projektu znajduje się w masterze a nie w main przez mój błąd ale poza tym nie powinny występować problemy z projektem.
+Główny branch projektu znajduje się w masterze a nie w main przez mój błąd podczas pusha projektu.
+
+Wystarczy zainstalować całość, uruchomić przez VS i zadziała.
