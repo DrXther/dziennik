@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dziennik.MainPage">
+
+    <Shell.TitleView>
+        <Grid>
+            <Label Text="Witamy w dzienniku Elektronicznym" x:Name="Headbar"/>
+        </Grid>
+    </Shell.TitleView>
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Resources/Styles/MainPageStyle.css" />
+    </ContentPage.Resources>
+
+
+    <StackLayout StyleClass="pageBackground">
+        <ScrollView x:Name="classScrollView">
+            <StackLayout x:Name="classStackLayout"/>
+        </ScrollView>
+        <Button Text="Dodaj nową klasę" Clicked="onAddClassClicked" StyleClass="button"/>
+        <Button Text="Odśwież listę klas" Clicked="onRefreashClassListClicked" StyleClass="button"/>
+    </StackLayout>
+
+</ContentPage>

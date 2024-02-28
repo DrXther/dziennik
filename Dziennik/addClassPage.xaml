@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dziennik.addClassPage"
+             Title="addClassPage">
+    <Shell.TitleView>
+        <Grid>
+            <Label Text="Dodaj Klasę" x:Name="Headbar"/>
+        </Grid>
+    </Shell.TitleView>
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Resources/Styles/addClassPageStyle.css" />
+    </ContentPage.Resources>
+
+    <StackLayout StyleClass="pageBackground">
+        <Entry x:Name="classNameEntry" StyleClass="entryStyle" Placeholder="Nazwa klasy:"/>
+
+        <Button Text="Dodaj klasę" Clicked="addClass" StyleClass="button"/>
+    </StackLayout>
+</ContentPage>

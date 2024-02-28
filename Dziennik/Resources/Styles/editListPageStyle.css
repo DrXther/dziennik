@@ -1,0 +1,83 @@
+#Headbar 
+{
+    background-color: #B05451;
+    color: #EBC4B9;
+    text-align: center;
+    font-size: 35;
+}
+
+.button 
+{
+    background-color: #B05451;
+    color: #EBC4B9;
+    padding: 10 20;
+    border-radius: 15;
+    margin: 5;
+    width: 300;
+}
+
+.delButton 
+{
+    background-color: #B70413;
+    color: #EBC4B9;
+}
+
+.editButton {
+    background-color: #7CAFE2;
+    color: #EBC4B9;
+    margin-left: 50;
+}
+
+contentView 
+{
+    background-color: #934644;
+    color: #EBC4B9;
+    padding: 10 20; 
+    margin: 5; 
+    width: 350; 
+    height: 65; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.entryStyle 
+{
+    background-color: #B05451; 
+    color: #EBC4B9; 
+    margin: 5 0; 
+    padding: 10 15; 
+    border-radius: 5; 
+    width: 300;
+}
+
+.pageBackground 
+{
+    background-color: #CD775F;
+}
+
+.students {
+    background-color: #934644;
+    color: #EBC4B9; 
+    padding: 10 20; 
+    margin: 5;
+    width: 500;
+    height: 65; 
+    display: flex;
+    justify-content: space-between;
+}
+
+.studentName
+{
+    font-size: 25;
+}
+
+#Id 
+{
+    width: 30;
+    text-align: end;
+}
+
+#Name 
+{
+    width: 250;
+}

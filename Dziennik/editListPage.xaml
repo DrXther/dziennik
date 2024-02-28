@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Dziennik.editListPage"
+             Title="editListPage">
+    <Shell.TitleView>
+        <Grid>
+            <Label Text="Edytuj Listę Uczniów" x:Name="Headbar"/>
+        </Grid>
+    </Shell.TitleView>
+
+    <ContentPage.Resources>
+        <StyleSheet Source="/Resources/Styles/editListPageStyle.css" />
+    </ContentPage.Resources>
+
+    <StackLayout StyleClass="pageBackground">
+        <ListView x:Name="studentsListView">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" StyleClass="students">
+                            <Label Text="{Binding Id}" StyleClass="studentName" x:Name="Id"/>
+                            <Label Text="{Binding Name}" StyleClass="studentName" x:Name="Name"/>
+                            <Button Text="Edytuj" Clicked="editStudent" CommandParameter="{Binding .}" StyleClass="editButton"/>
+                            <Button Text="Usuń" Clicked="deleteStudent" CommandParameter="{Binding .}" StyleClass="delButton"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Entry x:Name="newStudentEntry" Placeholder="Wprowadź nowego ucznia" StyleClass="entryStyle"/>
+        <Button Text="Dodaj nowego ucznia" Clicked="addNewStudent" StyleClass="button"/>
+    </StackLayout>
+</ContentPage>
